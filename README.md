@@ -8,7 +8,7 @@ Get repo recommendation based on your GitHub star history
 ## Dependencies
 - [redis](https://redis.io/): An in-memory database that persists on disk
 
-### Lib
+### Core
 - [hireids](https://github.com/redis/hiredis): Minimalistic C client for Redis >= 1.2
 - [OpenMP>=4.0](http://www.openmp.org/): C/C++ API that supports multi-platform shared memory multiprocessing programming
 
@@ -26,7 +26,7 @@ Get repo recommendation based on your GitHub star history
 
 ## Build Core
 ```
-cd lib; make
+cd core; make
 ```
 
 ## Preprocessing
