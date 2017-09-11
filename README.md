@@ -5,7 +5,7 @@ Octomender = Octocat + Recommender
 ```
 Get repo recommendation based on your GitHub star history.
 
-## Algorithm Testing
+## [[HELP] Algorithm Testing]](https://octomend.com)
 The recommendation algorithm is deployed and being tested on [octomend.com](https://octomend.com).
 
 __Visit [octomend.com](https://octomend.com) to help improve the recommendation.__
