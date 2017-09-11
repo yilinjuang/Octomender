@@ -1,9 +1,14 @@
 # Octomender
+Github Repo Recommender System.
 ```
 Octomender = Octocat + Recommender
 ```
-Github Repo Recommender System.
-Get repo recommendation based on your GitHub star history
+Get repo recommendation based on your GitHub star history.
+
+## Algorithm Testing
+The recommendation algorithm is deployed and being tested on [octomend.com](https://octomend.com).
+
+__Visit [octomend.com](https://octomend.com) to help improve the recommendation.__
 
 ## Dependencies
 - [redis](https://redis.io/): An in-memory database that persists on disk
@@ -68,3 +73,6 @@ Insert graph data into redis database.
 Usage: graph2redis.py <input-edgelist> <redis-port>
 Ex:    graph2redis.py data/2016-Q1.edge 6379
 ```
+
+## License
+MIT
