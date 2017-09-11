@@ -7,14 +7,24 @@ Get repo recommendation based on your GitHub star history
 
 ## Dependencies
 - [redis](https://redis.io/): An in-memory database that persists on disk
+
+### Lib
 - [hireids](https://github.com/redis/hiredis): Minimalistic C client for Redis >= 1.2
-- [redis-py](https://github.com/andymccurdy/redis-py): Redis Python Client
 - [OpenMP>=4.0](http://www.openmp.org/): C/C++ API that supports multi-platform shared memory multiprocessing programming
+
+### Preprocessing
+- [redis-py](https://github.com/andymccurdy/redis-py): Redis Python Client
+
+### Website
+- [Flask](http://flask.pocoo.org): A microframework for Python based on Werkzeug, Jinja 2 and good intentions
+- [GitHub-Flask](https://github.com/cenkalti/github-flask): Flask extension for authenticating users with GitHub and making requests to the API
+- [gunicorn](http://gunicorn.org): A Python WSGI HTTP Server for UNIX
+- [google-cloud-datestore](https://github.com/GoogleCloudPlatform/google-cloud-datastore): Low-level Java and Python client libraries for Google Cloud Datastore
 
 ## Dataset
 [Github Archive](https://www.githubarchive.org/)
 
-## Build
+## Build Core
 ```
 cd lib; make
 ```
