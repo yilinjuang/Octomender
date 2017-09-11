@@ -16,7 +16,7 @@ Get repo recommendation based on your GitHub star history
 
 ## Build
 ```
-make
+cd lib; make
 ```
 
 ## Preprocessing
