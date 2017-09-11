@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="frankyjuang, chin99926">
+        <meta name="keywords" content="GitHub,Recommend,Repo,Repository,Octo,Star">
+        <meta name="description" content="Octomender, the GitHub Repository Recommender.">
+        <meta property="og:url" content="{{ url_for('index', _external=True) }}">
+        <meta property="og:title" content="Octomender">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{ url_for('static', filename='img/octonaut.jpg', _external=True) }}">
+        <meta property="og:description" content="Octomender, the GitHub Repository Recommender.">
+        <title>Octomender</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/material.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dialog-polyfill.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/icon.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/material.min.js') }}" defer></script>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <main class="mdl-layout__content">
+                {% block body %}{% endblock %}
+            </main>
+        </div>
+    </body>
+</html>
+

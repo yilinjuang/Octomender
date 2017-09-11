@@ -1,0 +1,11 @@
+runtime: python
+env: flex
+entrypoint: gunicorn -c gunicorn.conf.py -b :$PORT run:app
+
+runtime_config:
+  python_version: 3
+
+handlers:
+- url: .*
+  script: run.app
+  secure: always

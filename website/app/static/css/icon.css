@@ -1,0 +1,32 @@
+/* http://fa2png.io/r/octicons/star/ */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/icon.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.octicon-repo {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYBAMAAACDuy0HAAAAFVBMVEUAAAB1dXV1dXV1dXV1dXV1dXV1dXUjc27QAAAABnRSTlMAF0CY3N6YlIi2AAAAi0lEQVRIx+3WsQ2AMAxE0UsmoKJOlQmABRgBiZ6AvP8ItCg6CbszyL9MXhMrhYEoei1NQloHikehHRQvHJ8U7xxfFIuIsFP/uL/8Ao45x5xjzjHn/8+Z5RvrT33h/lG+sWk5Ma09poUqzcxufFV7fifoMuJWDbhkPW5AVeMCZC1uAFCVuABARhSZugGkVvQsRN2nYQAAAABJRU5ErkJggg==');
+    background-color: transparent;
+}
+
+.octicon-star {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAMAAABGS8AGAAABR1BMVEUAAAB1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXWXXJ4eAAAAbHRSTlMAAQIDBAUGBwgJCw0ODxARFBUWGBkbHB4fICIlJigqLS8wMTI0Nzg5OjxAQkRFRkpNT1FWV1hbXGNpbG1xdHl/hYaIi4yOj5WbnqKmqKqvsrS3vsDBw8fMz9PX2drc3uDk5unr7fHz9ff5+/0dOaNMAAAB3klEQVQYGe3BWUMSUQAF4HMnRUUrlWpGaDVzSDLbtFTISrIyCkzbbErKFsrz/59DVGQw5i5enprvQywWi8W6xXfRFSIooyt80kUXiIAsowt81rmwTgSsK8M6nw0uLBMBG8qwzOc+F1aJgPvKsCrLJg8WiYBNFViUZQsP1oiALSqwJssQD5aIgCEVWJJlGw9WiIBtKrAiyyM8HJcYODf5mUdsTJzphxlnMD01/3yTET48e3DdTQoo6jl9YaZQ+kplX1YXb2ROnkCUy0trP2lo+/VDD504JR7DE4GOxFMaW0CkAg3dgcQsjfiQmqK+3+eh4OIfavqegpKzP6hlawiKTlWp4X0/lA18pLK1HmjofUNFLxxocV5SySPoEkUqmIeBPKVuw8g9SkzC0C1GugRT44yUgqlFRroJU+uMtAxDDqNVYWiUEn0wk6NEBmYeU2IOZrYoUYKRBGVqMJKm1BBM3GVY7X5+h2ETMLHKkEICSBYZkoeJX2yxkkTDcIkt3sHAIA+9GkHT2AYPOdA3zgNv0wi5sskDKehb4J5PV9FO5L5xzzT0rXPX9rTAPzizNe5ahjaHdbU5Bx305ndIVqFtlGQhgQjJIsk+6MpxJQmJ4RIz0DUzAgVj1xCLxWL/lb/Ix47QWoGVAAAAAABJRU5ErkJggg==');
+    background-color: transparent;
+}
+

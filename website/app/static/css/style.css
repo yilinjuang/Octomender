@@ -1,0 +1,141 @@
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../img/bg.jpg');
+    content: '';
+    opacity: 0.25;
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
+.mdl-layout__content {
+    padding: 150px 0;
+}
+
+.mdl-card__supporting-text {
+    font-size: 1.2rem;
+    line-height: 22px;
+}
+
+@media (max-width: 839px) {
+    .mdl-layout__content {
+        padding: 0;
+    }
+
+    .id-card > .mdl-card__media {
+        padding: 30px 0;
+    }
+
+    .octicon-repo {
+        display: none;
+    }
+}
+
+@media (min-width: 840px) {
+    .action-card > .mdl-card__actions > .mdl-button {
+        font-size: 24px;
+        height: 46px;
+        line-height: 46px;
+    }
+}
+
+.octo-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.intro-card > .mdl-card__title {
+    min-height: 200px;
+    background: url('../img/card-bg.png') center / cover;
+}
+
+.id-card > .mdl-card__media {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-card > .mdl-card__media > img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.action-card > .mdl-spinner {
+    margin: auto;
+}
+
+.action-card > .mdl-card__title {
+    padding: 32px 16px;
+    display: none;
+}
+
+.action-card > .mdl-card__title > h2 {
+    margin: 0 auto;
+}
+
+.action-card > .mdl-progress {
+    margin: auto;
+    display: none;
+}
+
+.action-card > .mdl-card__actions {
+    text-align: center;
+    display: none;
+}
+
+.suggest-vote {
+    width: auto;
+    float: right;
+}
+
+.suggest-vote > .mdl-button--icon {
+    padding: 20px;
+}
+
+.suggest-card > .mdl-card__title {
+    padding: 32px 32px 0px;
+}
+
+.suggest-card > .mdl-card__supporting-text {
+    padding: 16px 32px;
+}
+
+.suggest-card > .mdl-spinner,
+.star-card > .mdl-spinner {
+    margin: auto;
+}
+
+.suggest-card > .mdl-list,
+.star-card > .mdl-list {
+    margin: 0;
+    padding: 0 16px 32px;
+}
+
+.suggest-item:hover,
+.star-item:hover {
+    background-color: rgba(158,158,158, 0.20);
+    cursor: pointer;
+}
+
+.star-card > .mdl-card__title {
+    padding: 32px;
+}
+
+.star-number {
+    margin-right: 4px;
+}
+
+.mdl-dialog__content > p {
+    font-size: 1.2rem;
+}

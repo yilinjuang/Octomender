@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="octo-container mdl-grid">
+    <div class="intro-card mdl-card mdl-cell mdl-shadow--2dp mdl-cell--8-col">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text mdl-color-text--white">Octomender</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Welcome, I'm Octomender from the planet of GitHub! Free as I am, I like to look up in the GitHub sky, and search for interesting stars. Come with me and see what the stars of your history says about you. Click SUGGESTIONS to check out what you might want to take a look.
+        </div>
+    </div>
+    <div class="id-card mdl-card mdl-cell mdl-shadow--2dp mdl-cell--8-col mdl-cell--4-col-desktop">
+        <div class="mdl-card__media mdl-card--expand mdl-color--white">
+            <img src="{{ id_card.avatar }}">
+            {{ id_card.name }}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a href="{{ id_card.action_url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                {{ id_card.action_name }}
+            </a>
+        </div>
+    </div>
+    {% if action_card.enabled %}
+    <div class="action-card mdl-card mdl-cell mdl-shadow--2dp mdl-cell--12-col">
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text mdl-color-text--black">
+                You have starred ... repos since ...
+            </h2>
+        </div>
+        <div class="mdl-progress mdl-js-progress"></div>
+        <div class="mdl-card__actions">
+            <a href="#" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+                Suggest Me Now
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    <div id="suggest" class="suggest-card mdl-card mdl-cell mdl-shadow--2dp mdl-cell--12-col"
+         {% if not suggest_card.display %}style="display: none"{% endif %}>
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text mdl-color-text--black">My (Octomender's) Recommendation</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Here are some repos that might be your future stars. Tell me if you like them with the emojis beside the repos!
+        </div>
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        <ul class="mdl-list">
+        </ul>
+    </div>
+    {% if star_card.enabled %}
+    <div class="star-card mdl-card mdl-cell mdl-shadow--2dp mdl-cell--12-col">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text mdl-color-text--black">Recent Starred</h2>
+        </div>
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        <ul class="mdl-list">
+        </ul>
+    </div>
+    <dialog class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Help!</h4>
+        <div class="mdl-dialog__content">
+            <p>
+                Here are some repos that might be your future stars. Tell me if you like them with the emojis beside the repos!
+            </p>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button close">Tell you soon!</button>
+        </div>
+    </dialog>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dialog-polyfill.js') }}" defer></script>
+    {% endif %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/octo.js') }}" defer></script>
+</div>
+{% endblock %}
