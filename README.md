@@ -5,10 +5,13 @@ Octomender = Octocat + Recommender
 ```
 Get repo recommendation based on your GitHub star history.
 
-## <a href="https://octomend.com">[HELP] Algorithm Testing</a>
-The recommendation algorithm is deployed and being tested on [octomend.com](https://octomend.com).
+## <a href="https://octomend.com">~~[HELP] Algorithm Testing~~</a> End of Service
+~~The recommendation algorithm is deployed and being tested on [octomend.com](https://octomend.com).~~
 
-__Visit [octomend.com](https://octomend.com) to help improve the recommendation.__
+~~Visit [octomend.com](https://octomend.com) to help improve the recommendation.~~
+
+__End of Service since GitHub published ["Discover Repositories"](https://github.com/dashboard/discover) service.__
+
 
 ## Dependencies
 - [redis](https://redis.io/): An in-memory database that persists on disk
