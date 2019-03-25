@@ -55,7 +55,7 @@ Refer raw json data format to [GitHub API v3](https://developer.github.com/v3/ac
 ### [parse_mp.py](preprocessing/parse_mp.py)
 Ditto, but run with multiprocessing. Default number of processes is 16.
 ```
-Usage: parse.py {-m|--member|-w|--watch} {<input-json-directory>|<input-json-file>} <output-data-basename> [n-process]
+Usage: parse_mp.py {-m|--member|-w|--watch} {<input-json-directory>|<input-json-file>} <output-data-basename> [n-process]
   -m, --member      parse MemberEvent.
   -w, --watch       parse WatchEvent.
   n-process         number of processes when multiprocessing.
@@ -76,6 +76,14 @@ Insert graph data into redis database.
 Usage: graph2redis.py <input-edgelist> <redis-port>
 Ex:    graph2redis.py data/2016-Q1.edge 6379
 ```
+
+## Thanks
+
+[importpython](https://importpython.com/newsletter/) and reddit.
+
+![importpython](assets/importpython.png)
+
+![reddit](assets/reddit.png)
 
 ## License
 MIT
