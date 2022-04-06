@@ -2,4 +2,4 @@ Flask==1.0
 google-cloud-datastore==1.7.3
 GitHub-Flask==3.2.0
 gunicorn==19.9.0
-paramiko==2.4.2
+paramiko==2.10.1
